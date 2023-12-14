@@ -12,7 +12,7 @@ SecureLinkHub is a web application designed for secure user information manageme
 
 ### Prerequisites
 
-Make sure you have Node.js and npm installed on your machine.
+Make sure you have Node.js and npm installed on your machine. 
 
 ### Installation
 
@@ -25,5 +25,10 @@ Make sure you have Node.js and npm installed on your machine.
    ```
    npm start
    ```
-Visit the link and you're ready to go! 
+
+### Configuration
+
+Replace the placeholder values with your actual email username and password for sending simulated phishing emails.
+
+
 
