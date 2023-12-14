@@ -1,0 +1,34 @@
+<form action="/api/users" method="POST" id="add_user">
+
+    <div class="new_user">
+        <div class="form-group">
+            <label for="id" class="text-dark">ID Number</label><br>
+            <input type="number" name="id" value="">
+            
+        </div>
+        <div class="form-group">
+            <label for="Name" class="text-dark">Username</label><br>
+            <input type="text" name="name" value="">
+            
+        </div>
+        <div class="form-group">
+            <label for="Email" class="text-dark">Email</label><br>
+            <input type="text" name="email" value="">
+            
+        </div>
+        <div class="form-group">
+            <label for="Department" class="text-dark">Department</label><br>
+            <select name="department">
+                <option value="IT">IT</option>
+                <option value="Sales">Sales</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit" class="btn text-dark update">Save</button>
+        </div>
+
+    </div>
+</form>

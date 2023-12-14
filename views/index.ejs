@@ -1,0 +1,59 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!-- end of header -->
+
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+            <a href="/add-user" class="border-shadow">
+                <span class="text-gradient"><i class="fas fa-user"></i>  New User </span>
+            </a>
+        </div>
+
+
+        <form id="send-emails" action="/send-emails" method="post">
+            <label for="template">Select Email Template:</label>
+            <select name="template" id="template">
+                <option value="template1">Template 1</option>
+                <option value="template2">Template 2</option>
+            </select>
+        
+            <label for="department">Select Department:</label>
+            <select name="department" id="department">
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Finance">Finance</option>
+                <option value="All">All</option>
+            </select>
+        
+            <button type="submit" class="btn border-shadow text-gradient">Send Emails to Users</button>
+        </form>
+        
+        
+
+        <form action="/" method="POST">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Sno</th>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Department</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <!-- include user details -->
+                    <%- include('include/_show')%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+<!-- include footer -->
+<%- include('include/_footer')%>
+<!-- end of footer -->
